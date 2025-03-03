@@ -51,3 +51,17 @@ Bộ dữ liệu đến từ **Olist Brazilian E-Commerce Dataset** trên Kaggle
 ### 1️⃣ **Cài đặt thư viện cần thiết**  
 ```bash
 pip install pandas numpy seaborn matplotlib scikit-learn streamlit
+```
+
+### 2️⃣ Chạy Notebook Phân Tích
+```bash 
+jupyter notebook analysis.ipynb
+```
+
+### 📌 Định Hướng Tương Lai
+✅ Dự đoán doanh số bằng Machine Learning.
+✅ Tối ưu thời gian vận chuyển dựa trên dữ liệu lịch sử.
+✅ Xây dựng hệ thống gợi ý sản phẩm cá nhân hóa.
+
+📩 Liên hệ & Đóng góp: Hãy tạo Pull Request nếu bạn muốn đóng góp cho dự án này!
+🔗 GitHub của bạn: https://github.com/dnoug12
