@@ -13,11 +13,19 @@ Dự án này phân tích dữ liệu từ nền tảng thương mại điện t
 ---
 
 ## 📂 Dữ Liệu Sử Dụng  
-Bộ dữ liệu đến từ **Olist Brazilian E-Commerce Dataset** trên Kaggle, bao gồm:
-- 🛒 **orders_dataset.csv** – Thông tin đơn hàng.
-- 👥 **customers_dataset.csv** – Thông tin khách hàng.
-- 📦 **products_dataset.csv** – Thông tin sản phẩm.
-- 💰 **payments_dataset.csv** – Thông tin thanh toán.
+Bộ dữ liệu đến từ **Olist Brazilian E-Commerce Dataset** trên Kaggle, bao gồm các bảng sau:
+
+| 📁 **Tên Bảng**                     | 📄 **Mô Tả** |
+|-------------------------------------|-------------|
+| 🛍 **olist_customers_dataset.csv**  | Thông tin khách hàng (ID khách hàng, địa chỉ, mã vùng). |
+| 🌍 **olist_geolocation_dataset.csv** | Dữ liệu vị trí địa lý (kinh độ, vĩ độ, mã bưu điện). |
+| 📦 **olist_orders_dataset.csv**      | Thông tin đơn hàng (ID đơn hàng, ngày đặt, trạng thái đơn hàng). |
+| 📊 **olist_order_items_dataset.csv** | Chi tiết sản phẩm trong từng đơn hàng (giá, phí vận chuyển, số lượng). |
+| 💳 **olist_order_payments_dataset.csv** | Thông tin thanh toán (phương thức thanh toán, số lần thanh toán). |
+| ⭐ **olist_order_reviews_dataset.csv** | Đánh giá của khách hàng về đơn hàng. |
+| 🎁 **olist_products_dataset.csv**     | Thông tin sản phẩm (ID sản phẩm, danh mục, trọng lượng, kích thước). |
+| 🏪 **olist_sellers_dataset.csv**      | Thông tin nhà bán hàng (ID nhà bán, vị trí cửa hàng). |
+| 🔄 **product_category_name_translation.csv** | Dịch danh mục sản phẩm từ tiếng Bồ Đào Nha sang tiếng Anh. |
 
 **🔗 Link dữ liệu:** [Kaggle - Brazilian E-commerce](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
