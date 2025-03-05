@@ -11,7 +11,7 @@ Dự án này phân tích dữ liệu từ nền tảng thương mại điện t
 - Đề xuất chiến lược cải thiện kinh doanh.
 
 ---
-
+- Vui lòng đọc file Report.pdf để xem tổng quan bài phân tích
 ## 📂 Dữ Liệu Sử Dụng  
 Bộ dữ liệu đến từ **Olist Brazilian E-Commerce Dataset** trên Kaggle, bao gồm các bảng sau:
 
