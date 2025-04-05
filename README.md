@@ -1,67 +1,72 @@
-# 📊 Phân Tích Dữ Liệu E-commerce Brazil (Olist)
+# 📊 Brazil E-Commerce Data Analysis (Olist)
 
-## 🔍 Giới Thiệu  
-Dự án này phân tích dữ liệu từ nền tảng thương mại điện tử **Olist** để tìm hiểu xu hướng doanh thu, hành vi khách hàng, hiệu suất giao hàng và đề xuất chiến lược cải thiện hoạt động kinh doanh.
+## 🔍 Introduction
+This project analyzes data from the **Olist** e-commerce platform to uncover revenue trends, customer behavior, delivery performance, and to recommend strategies for improving business operations.
 
-📌 **Mục tiêu chính**:
-- Phân tích doanh thu & đơn hàng theo thời gian.
-- Khám phá hành vi mua sắm theo giờ/ngày.
-- Đánh giá hiệu suất giao hàng & tối ưu logistics.
-- Phân cụm khách hàng theo đặc điểm mua sắm.
-- Đề xuất chiến lược cải thiện kinh doanh.
-
----
-- Vui lòng đọc file Report.pdf để xem tổng quan bài phân tích
-## 📂 Dữ Liệu Sử Dụng  
-Bộ dữ liệu đến từ **Olist Brazilian E-Commerce Dataset** trên Kaggle, bao gồm các bảng sau:
-
-| 📁 **Tên Bảng**                     | 📄 **Mô Tả** |
-|-------------------------------------|-------------|
-| 🛍 **olist_customers_dataset.csv**  | Thông tin khách hàng (ID khách hàng, địa chỉ, mã vùng). |
-| 🌍 **olist_geolocation_dataset.csv** | Dữ liệu vị trí địa lý (kinh độ, vĩ độ, mã bưu điện). |
-| 📦 **olist_orders_dataset.csv**      | Thông tin đơn hàng (ID đơn hàng, ngày đặt, trạng thái đơn hàng). |
-| 📊 **olist_order_items_dataset.csv** | Chi tiết sản phẩm trong từng đơn hàng (giá, phí vận chuyển, số lượng). |
-| 💳 **olist_order_payments_dataset.csv** | Thông tin thanh toán (phương thức thanh toán, số lần thanh toán). |
-| ⭐ **olist_order_reviews_dataset.csv** | Đánh giá của khách hàng về đơn hàng. |
-| 🎁 **olist_products_dataset.csv**     | Thông tin sản phẩm (ID sản phẩm, danh mục, trọng lượng, kích thước). |
-| 🏪 **olist_sellers_dataset.csv**      | Thông tin nhà bán hàng (ID nhà bán, vị trí cửa hàng). |
-| 🔄 **product_category_name_translation.csv** | Dịch danh mục sản phẩm từ tiếng Bồ Đào Nha sang tiếng Anh. |
-
-**🔗 Link dữ liệu:** [Kaggle - Brazilian E-commerce](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+📌 **Main Objectives**:
+- Analyze revenue and order volume over time.
+- Explore shopping behavior by hour/day.
+- Evaluate delivery performance and optimize logistics.
+- Segment customers by shopping characteristics.
+- Propose strategies to improve business outcomes.
 
 ---
 
-## 📊 Các Phân Tích Chính  
-### 📈 1. Xu hướng doanh thu & số lượng đơn hàng  
-- Doanh thu tăng mạnh vào các tháng cao điểm.
-- Số lượng đơn hàng cao nhất vào **buổi tối (18h - 22h)**.
+> Please refer to **Report.pdf** for a comprehensive overview of the analysis.
 
-### 🚚 2. Hiệu suất giao hàng  
-- Thời gian giao hàng có sự chênh lệch giữa các tháng.
-- Một số khu vực có thời gian giao hàng **quá lâu**, cần tối ưu logistics.
+## 📂 Data Sources
+The dataset is the **Olist Brazilian E-Commerce Dataset** from Kaggle, consisting of the following tables:
 
-### 👥 3. Phân cụm khách hàng  
-- Nhóm khách hàng có hành vi mua sắm khác nhau.
-- Thanh toán qua **Credit Card** có giá trị đơn hàng cao nhất.
+| 📁 **Filename**                                  | 📄 **Description**                                                |
+|--------------------------------------------------|------------------------------------------------------------------|
+| 🛍 `olist_customers_dataset.csv`                 | Customer information (customer ID, address, zip code).           |
+| 🌍 `olist_geolocation_dataset.csv`               | Geolocation data (longitude, latitude, postal code).             |
+| 📦 `olist_orders_dataset.csv`                    | Order information (order ID, order date, order status).          |
+| 📊 `olist_order_items_dataset.csv`               | Order item details (price, shipping fee, quantity).              |
+| 💳 `olist_order_payments_dataset.csv`            | Payment information (payment method, payment installments).      |
+| ⭐ `olist_order_reviews_dataset.csv`             | Customer reviews for each order.                                 |
+| 🎁 `olist_products_dataset.csv`                  | Product information (product ID, category, weight, dimensions).  |
+| 🏪 `olist_sellers_dataset.csv`                   | Seller information (seller ID, store location).                  |
+| 🔄 `product_category_name_translation.csv`       | Translation of product categories from Portuguese to English.     |
+
+**🔗 Data Link:** [Kaggle - Brazilian E-commerce](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
 ---
 
-## 🛠️ Cách Cài Đặt & Chạy Dự Án  
+## 📊 Key Analyses
 
-### 1️⃣ **Cài đặt thư viện cần thiết**  
+### 📈 1. Revenue & Order Trends
+- Revenue spikes during peak months.
+- Highest order volume in the **evening (6 PM - 10 PM)**.
+
+### 🚚 2. Delivery Performance
+- Delivery times vary significantly between months.
+- Some regions experience **excessive delivery delays**, indicating a need to optimize logistics.
+
+### 👥 3. Customer Segmentation
+- Distinct customer groups based on shopping behavior.
+- **Credit Card** payments correspond to the highest average order value.
+
+---
+
+## 🛠️ Setup & Running the Project
+
+### 1️⃣ Install Required Libraries
 ```bash
 pip install pandas numpy seaborn matplotlib scikit-learn streamlit
 ```
 
-### 2️⃣ Chạy Notebook Phân Tích
-```bash 
+### 2️⃣ Run the Analysis Notebook
+```bash
 jupyter notebook analysis.ipynb
 ```
 
-### 📌 Định Hướng Tương Lai
-- ✅ Dự đoán doanh số bằng Machine Learning.
-- ✅ Tối ưu thời gian vận chuyển dựa trên dữ liệu lịch sử.
-- ✅ Xây dựng hệ thống gợi ý sản phẩm cá nhân hóa.
+### 📌 Future Directions
+- ✅ Sales forecasting using Machine Learning.
+- ✅ Optimize delivery time based on historical data.
+- ✅ Build a personalized product recommendation system.
 
-📩 Liên hệ & Đóng góp: Hãy tạo Pull Request nếu bạn muốn đóng góp cho dự án này! **
+📩 **Contact & Contributions:** Feel free to open a Pull Request if you’d like to contribute!
+
 🔗 GitHub: https://github.com/dnoug12
+
